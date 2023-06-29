@@ -56,7 +56,7 @@ elif menu == 'Kontak':
     prod = ['Contact Person', 'WhatsApp', 'Instagram', 'Email']
     pilihan_prod = st.selectbox('', prod)
     if pilihan_prod == 'WhatsApp' :
-        st.write('Click Link [WhatsApp](https://wa.me/087872624702)')
+        st.write('Click Link [WhatsApp](https://wa.me/6287872624702)')
     elif pilihan_prod == 'Instagram':
         st.write('Click Link [Instagram](https://instagram.com/aryudistira_)')
     elif pilihan_prod == 'Email' :
