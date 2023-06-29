@@ -5,7 +5,7 @@ st.header("_:blue[Hello Universe!]_")
 def main():
     st.write("**:black[Terimakasih sudah berkunjung]**")
 st.sidebar.header('Menu')
-menu = st.sidebar.radio('klik tobol dibawah:', ['Wellcome', 'Biodata', 'Tentang', 'Kontak'])
+menu = st.sidebar.radio('klik tombol dibawah:', ['Wellcome', 'Biodata', 'Tentang', 'Kontak'])
 if menu == 'Wellcome':
     header = st.image("foto_profil/header.png", use_column_width=True,)
     st.title('SAMPURASUN')
