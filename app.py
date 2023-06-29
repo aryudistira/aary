@@ -5,7 +5,7 @@ st.header("_:blue[Hello Universe!]_")
 def main():
     st.write("**:black[Terimakasih sudah berkunjung]**")
 st.sidebar.header('Menu')
-menu = st.sidebar.radio('Navigasi', ['Wellcome', 'Biodata', 'Tentang', 'Kontak'])
+menu = st.sidebar.radio('klik tobol dibawah:', ['Wellcome', 'Biodata', 'Tentang', 'Kontak'])
 if menu == 'Wellcome':
     header = st.image("foto_profil/header.png", use_column_width=True,)
     st.title('SAMPURASUN')
@@ -24,7 +24,6 @@ elif menu == 'Biodata':
     st.write('Prodi 			: Manajemen Informasi Kesehatan')
     st.write('NIM 			: B01.022.002')
 
-    # Tampilkan konten beranda di sini
 elif menu == 'Tentang':
     header = st.image("foto_profil/header.png", use_column_width=True,)
     st.title('Tentang Kami')
@@ -42,13 +41,12 @@ elif menu == 'Tentang':
     else:
         st.write('')
 
-    tugas = ['Tugas dan tanggung jawab seorang rekam medis?', 'Disini']
+    tugas = ['Tugas dan tanggung jawab seorang rekam medis?', 'Klik Disini']
     pilihan_prod = st.selectbox('', tugas)
-    if pilihan_prod == 'Disini' :
+    if pilihan_prod == 'Klik Disini' :
         st.write('Seorang staf rekam medis bertanggung jawab juga dalam pemanfaatan data rekam medis sebagai penelitian atau publisitas. Basis data dan informasi tersebut diolah dengan menyediakan rangkuman statistik medis dan penyakit untuk publikasi penelitian ilmiah di bidang kesehatan. Staf rekam medis juga harus bertindak cepat jika suatu waktu data rekam medis diperlukan. Oleh karena itu, menjadi staf rekam medis harus teliti dan mahir dalam pengelolaan dan penyimpanan data.')
     else: 
         st.write('')
-    # Tampilkan konten tentang di sini
 
 elif menu == 'Kontak':
     header = st.image("foto_profil/header.png", use_column_width=True,)
